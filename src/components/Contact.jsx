@@ -18,13 +18,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    // Create the email content
-    const subject = `${formData.subject} - Contact from ${formData.name}`;
+    // Create the email content with fallback for empty subject
+    const selectedSubject = formData.subject || 'General Inquiry';
+    const subject = `${selectedSubject} - Contact from ${formData.name}`;
     const body = `Hello,
 
 My name is ${formData.name}.
-
-Subject: ${formData.subject}
 
 ${formData.message}
 

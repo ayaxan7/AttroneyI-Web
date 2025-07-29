@@ -15,12 +15,33 @@ const Hero = () => {
           <div className="hero-text">
             <h1>Your AI Legal Assistant. Reimagined.</h1>
             <p>Experience the future of legal consultation with our sophisticated AI-powered platform. Get instant, accurate legal guidance tailored to your needs.</p>
-            <button 
-              className="btn btn-large"
-              onClick={() => scrollToSection('features')}
-            >
-              Get Started
-            </button>
+            <div className="hero-download-buttons">
+              <a 
+                href="https://apps.apple.com/placeholder-app-store-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hero-store-btn"
+              >
+                <img 
+                  src="/src/assets/image.png" 
+                  alt="Download on the App Store" 
+                  className="hero-store-btn-img"
+                />
+              </a>
+              
+              <a 
+                href="https://play.google.com/placeholder-play-store-link" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hero-store-btn"
+              >
+                <img 
+                  src="/src/assets/playstorebutton.png" 
+                  alt="Get it on Google Play" 
+                  className="hero-store-btn-img"
+                />
+              </a>
+            </div>
           </div>
           
           <div className="hero-image">
