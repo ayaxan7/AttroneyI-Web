@@ -24,21 +24,31 @@ const Download = () => {
           </div>
           
           <div className="download-buttons">
-            <button className="btn btn-bronze btn-large download-btn">
-              <span className="btn-icon">📱</span>
-              <div className="btn-content">
-                <span className="btn-subtitle">Download on the</span>
-                <span className="btn-title">App Store</span>
-              </div>
-            </button>
+            <a 
+              href="https://apps.apple.com/placeholder-app-store-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="download-store-btn"
+            >
+              <img 
+                src="/src/assets/appstorebutton.png" 
+                alt="Download on the App Store" 
+                className="store-btn-img"
+              />
+            </a>
             
-            <button className="btn btn-bronze btn-large download-btn">
-              <span className="btn-icon">🤖</span>
-              <div className="btn-content">
-                <span className="btn-subtitle">Get it on</span>
-                <span className="btn-title">Google Play</span>
-              </div>
-            </button>
+            <a 
+              href="https://play.google.com/placeholder-play-store-link" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="download-store-btn"
+            >
+              <img 
+                src="/src/assets/playstorebutton.png" 
+                alt="Get it on Google Play" 
+                className="store-btn-img"
+              />
+            </a>
           </div>
         </div>
         

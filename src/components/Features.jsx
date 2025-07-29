@@ -3,13 +3,13 @@ import './Features.css';
 const Features = () => {
   const features = [
     {
-      title: "AI-Powered Analysis",
+      title: "Juris - Your personal legal AI assistant",
       description: "Advanced artificial intelligence provides instant legal document analysis and contract review with unprecedented accuracy.",
-      icon: "⚖️"
+      icon: "👾"
     },
     {
-      title: "24/7 Legal Consultation",
-      description: "Get expert legal guidance anytime, anywhere. Our AI assistant is available round the clock for your legal needs.",
+      title: "24/7 Legal Updates",
+      description: "Stay informed with real-time legal news and developments, available to you 24/7. Never miss an important update in the world of law.",
       icon: "🕒"
     },
     {
@@ -23,9 +23,9 @@ const Features = () => {
       icon: "🔍"
     },
     {
-      title: "Privacy & Security",
-      description: "Bank-level encryption ensures your sensitive legal information remains completely confidential and secure.",
-      icon: "🔒"
+      title: "Mock Trials",
+      description: "Host or join interactive courtroom-style discussions. Create rooms, assign roles, and simulate real trials for practice, learning, or debate.",
+      icon: "🎓"
     },
     {
       title: "Expert Network",
