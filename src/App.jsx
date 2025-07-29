@@ -5,6 +5,7 @@ import About from './components/About'
 import Action from './components/Action'
 import Testimonials from './components/Testimonials'
 import Download from './components/Download'
+import Contact from './components/Contact'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -15,9 +16,10 @@ function App() {
       <Hero />
       <Features />
       <About />
-      <Action />
-      <Testimonials />
-      <Download />
+      {/* <Action /> */}
+      {/* <Testimonials />
+      <Download /> */}
+      <Contact />
       <Footer />
     </div>
   )
