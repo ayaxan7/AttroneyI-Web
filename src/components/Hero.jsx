@@ -1,6 +1,10 @@
 import './Hero.css';
 import { useState, useEffect } from 'react';
-import {Dashboard, JurisChatScreen, CreateDrafts, Community, HelpAndSupport} from '../assets/carouselscreens';
+import Dashboard from '../assets/carouselscreens/Dashboard.png';
+import JurisChatScreen from '../assets/carouselscreens/JurisChatScreen.png';
+import CreateDrafts from '../assets/carouselscreens/Create Drafts.png';
+import Community from '../assets/carouselscreens/Community.png';
+import HelpAndSupport from '../assets/carouselscreens/Help & Support.png';
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
