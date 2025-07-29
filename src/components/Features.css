@@ -11,12 +11,16 @@
 .features-header h2 {
   margin-bottom: 1rem;
   color: var(--color-gold);
+  font-family: var(--font-family);
+  font-weight: 700;
 }
 
 .features-header p {
   font-size: 1.2rem;
   max-width: 600px;
   margin: 0 auto;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .features-grid {
@@ -51,11 +55,15 @@
   color: var(--color-gold);
   margin-bottom: 1rem;
   font-size: 1.5rem;
+  font-family: var(--font-family);
+  font-weight: 600;
 }
 
 .feature-card p {
   line-height: 1.6;
   font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 /* Mobile Responsive */

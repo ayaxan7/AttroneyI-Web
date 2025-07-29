@@ -24,12 +24,16 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  font-family: var(--font-family);
+  font-weight: 900;
 }
 
 .hero-text p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.7;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .hero-image {
@@ -84,6 +88,8 @@
   color: var(--color-gold);
   font-size: 1.1rem;
   margin: 0;
+  font-family: var(--font-family);
+  font-weight: 700;
 }
 
 .chat-preview {
@@ -115,6 +121,8 @@
 .message p {
   margin: 0;
   line-height: 1.4;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 /* Mobile Responsive */

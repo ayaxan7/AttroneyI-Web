@@ -15,12 +15,16 @@
   color: var(--color-gold);
   margin-bottom: 1.5rem;
   font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--font-family);
+  font-weight: 700;
 }
 
 .download-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .download-features {
@@ -32,6 +36,8 @@
 .download-feature span {
   color: var(--color-text-light);
   font-size: 1rem;
+  font-family: var(--font-family);
+  font-weight: 500;
 }
 
 .download-buttons {
@@ -75,6 +81,8 @@
   color: var(--color-text-muted);
   text-transform: none;
   letter-spacing: normal;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .btn-title {
@@ -83,6 +91,7 @@
   color: var(--color-bronze);
   text-transform: none;
   letter-spacing: normal;
+  font-family: var(--font-family);
 }
 
 .download-btn:hover .btn-title,
@@ -103,7 +112,8 @@
   font-size: 2.5rem;
   color: var(--color-bronze);
   margin-bottom: 0.5rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-family);
+  font-weight: 900;
 }
 
 .download-stats .stat p {
@@ -112,6 +122,8 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin: 0;
+  font-family: var(--font-family);
+  font-weight: 600;
 }
 
 /* Mobile Responsive */

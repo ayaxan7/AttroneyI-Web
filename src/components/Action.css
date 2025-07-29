@@ -14,12 +14,16 @@
   color: var(--color-gold);
   margin-bottom: 1.5rem;
   font-size: clamp(2rem, 4vw, 3rem);
+  font-family: var(--font-family);
+  font-weight: 700;
 }
 
 .action-text p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 .action-features {
@@ -32,12 +36,15 @@
   gap: 1rem;
   margin-bottom: 1rem;
   font-size: 1.1rem;
+  font-family: var(--font-family);
+  font-weight: 500;
 }
 
 .feature-bullet {
   color: var(--color-gold);
   font-weight: bold;
   font-size: 1.2rem;
+  font-family: var(--font-family);
 }
 
 .demo-container {
@@ -105,12 +112,16 @@
   margin: 0 0 0.5rem 0;
   font-size: 1.2rem;
   color: var(--color-gold);
+  font-family: var(--font-family);
+  font-weight: 600;
 }
 
 .video-overlay p {
   margin: 0;
   font-size: 0.9rem;
   color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 /* Mobile Responsive */

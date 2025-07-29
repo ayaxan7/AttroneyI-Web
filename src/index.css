@@ -5,8 +5,7 @@
   --color-old-black: #111111;
   --color-text-light: #f5f5f5;
   --color-text-muted: #cccccc;
-  --font-serif: 'Playfair Display', serif;
-  --font-sans: system-ui, -apple-system, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Playfair Display', serif;
 }
 
 * {
@@ -21,7 +20,7 @@ html {
 }
 
 body {
-  font-family: var(--font-sans);
+  font-family: var(--font-family);
   font-weight: 400;
   line-height: 1.6;
   color: var(--color-text-light);
@@ -31,7 +30,7 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-serif);
+  font-family: var(--font-family);
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-text-light);
@@ -40,19 +39,24 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 900;
 }
 
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 700;
 }
 
 h3 {
   font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
 }
 
 p {
   margin-bottom: 1rem;
   color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-weight: 400;
 }
 
 /* Links */
@@ -60,6 +64,8 @@ a {
   color: var(--color-gold);
   text-decoration: none;
   transition: color 0.3s ease;
+  font-family: var(--font-family);
+  font-weight: 500;
 }
 
 a:hover {
@@ -73,8 +79,8 @@ a:hover {
   border: 2px solid var(--color-gold);
   background: transparent;
   color: var(--color-gold);
-  font-family: var(--font-sans);
-  font-weight: 600;
+  font-family: var(--font-family);
+  font-weight: 700;
   text-decoration: none;
   text-align: center;
   border-radius: 0;
