@@ -15,13 +15,13 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Create the email content with fallback for empty subject
-    const selectedSubject = formData.subject || 'General Inquiry';
-    const subject = `${selectedSubject} - Contact from ${formData.name}`;
-    const body = `Hello,
+const handleSubmit = (e) => {
+  e.preventDefault();
+  
+  // Create the email content with fallback for empty subject
+  const selectedSubject = formData.subject || 'General Inquiry';
+  const subject = `Query related to : ${selectedSubject} `;
+  const body = `Hello,
 
 My name is ${formData.name}.
 
@@ -30,19 +30,19 @@ ${formData.message}
 Best regards,
 ${formData.name}`;
 
-    // Create Gmail URL with pre-filled content
-    const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=syedayaan9376@gmail.com&subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open Gmail in a new window
-    window.open(gmailUrl, '_blank');
-    
-    // Reset form
-    setFormData({
-      name: '',
-      subject: '',
-      message: ''
-    });
-  };
+  // Create Gmail URL with correct parameter order
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=syedayaan9376@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  
+  // Open Gmail in a new window
+  window.open(gmailUrl, '_blank');
+  
+  // Reset form
+  setFormData({
+    name: '',
+    subject: '',
+    message: ''
+  });
+};
 
   return (
     <section id="contact" className="contact">
