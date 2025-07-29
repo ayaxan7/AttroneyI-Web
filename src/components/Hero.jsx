@@ -1,6 +1,6 @@
 import './Hero.css';
 import { useState, useEffect } from 'react';
-
+import {Dashboard, JurisChatScreen, CreateDrafts, Community, HelpAndSupport} from '../assets/carouselscreens';
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -8,11 +8,11 @@ const Hero = () => {
   
   // Sample images - you can replace these with your actual image paths
    const carouselImages = [
-    '/src/assets/carouselscreens/Dashboard.png',
-    '/src/assets/carouselscreens/JurisChatScreen.png',
-    '/src/assets/carouselscreens/Create Drafts.png',
-    '/src/assets/carouselscreens/Community.png',
-    '/src/assets/carouselscreens/Help & Support.png'
+    Dashboard,
+    JurisChatScreen,
+    CreateDrafts,
+    Community,
+    HelpAndSupport
   ];
 
   useEffect(() => {
