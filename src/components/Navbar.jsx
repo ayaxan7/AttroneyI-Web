@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <div className="navbar-logo">
-            <h3>AttorneyAI</h3>
+            <h3>Attorney-I</h3>
           </div>
           
           <ul className="navbar-links">

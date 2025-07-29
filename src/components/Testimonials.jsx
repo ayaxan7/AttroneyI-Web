@@ -6,21 +6,21 @@ const Testimonials = () => {
       name: "Sarah Chen",
       role: "Corporate Lawyer",
       company: "Goldman & Associates",
-      content: "AttorneyAI has revolutionized our contract review process. What used to take hours now takes minutes, with unprecedented accuracy and insight.",
+      content: "Attorney-I has revolutionized our contract review process. What used to take hours now takes minutes, with unprecedented accuracy and insight.",
       rating: 5
     },
     {
       name: "Michael Rodriguez",
       role: "Small Business Owner",
       company: "TechStart Innovations",
-      content: "As a startup, having access to instant legal guidance has been invaluable. AttorneyAI helped us navigate complex regulations with confidence.",
+      content: "As a startup, having access to instant legal guidance has been invaluable. Attorney-I helped us navigate complex regulations with confidence.",
       rating: 5
     },
     {
       name: "Dr. Emily Watson",
       role: "Legal Scholar",
       company: "Harvard Law School",
-      content: "The depth of legal knowledge and research capabilities of AttorneyAI is remarkable. It's like having a team of legal experts at your fingertips.",
+      content: "The depth of legal knowledge and research capabilities of Attorney-I is remarkable. It's like having a team of legal experts at your fingertips.",
       rating: 5
     }
   ];

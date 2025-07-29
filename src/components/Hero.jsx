@@ -29,7 +29,7 @@ const Hero = () => {
                 <div className="app-preview">
                   <div className="app-header">
                     <div className="status-bar"></div>
-                    <h4>AttorneyAI</h4>
+                    <h4>Attorney-I</h4>
                   </div>
                   <div className="chat-preview">
                     <div className="message ai-message">

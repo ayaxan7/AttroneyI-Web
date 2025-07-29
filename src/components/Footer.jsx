@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-content">
           <div className="footer-brand">
-            <h3>AttorneyAI</h3>
+            <h3>Attorney-I</h3>
             <p>Your AI Legal Assistant. Reimagined.</p>
             <div className="social-links">
               <a href="#" aria-label="LinkedIn">💼</a>
@@ -52,7 +52,7 @@ const Footer = () => {
             <div className="footer-column">
               <h4>Contact</h4>
               <ul>
-                <li><a href="mailto:support@attorneyai.com">support@attorneyai.com</a></li>
+                <li><a href="mailto:support@attorney-i.com">support@attorney-i.com</a></li>
                 <li><a href="tel:+1-555-0123">+1 (555) 012-3456</a></li>
                 <li>Legal Tech Plaza<br />123 Innovation Drive<br />San Francisco, CA 94105</li>
               </ul>
@@ -62,9 +62,9 @@ const Footer = () => {
         
         <div className="footer-bottom">
           <div className="footer-bottom-content">
-            <p>&copy; {currentYear} AttorneyAI. All rights reserved.</p>
+            <p>&copy; {currentYear} Attorney-I. All rights reserved.</p>
             <p className="disclaimer">
-              AttorneyAI provides general legal information and should not be considered as legal advice. 
+              Attorney-I provides general legal information and should not be considered as legal advice. 
               Always consult with qualified legal professionals for specific legal matters.
             </p>
           </div>

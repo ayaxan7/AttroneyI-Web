@@ -6,7 +6,7 @@ const Action = () => {
       <div className="container">
         <div className="action-content">
           <div className="action-text">
-            <h2>See AttorneyAI in Action</h2>
+            <h2>See Attorney-I in Action</h2>
             <p>
               Watch how our AI legal assistant transforms complex legal queries into clear, actionable insights. Experience the future of legal consultation through our interactive demo.
             </p>

@@ -10,13 +10,13 @@ const About = () => {
               <div className="about-text">
                 <h2>Redefining Legal Excellence</h2>
                 <p>
-                  In an era where legal complexity meets technological innovation, AttorneyAI stands as the pinnacle of legal assistance. Our sophisticated artificial intelligence platform combines decades of legal expertise with cutting-edge technology to deliver unparalleled legal guidance.
+                  In an era where legal complexity meets technological innovation, Attorney-I stands as the pinnacle of legal assistance. Our sophisticated artificial intelligence platform combines decades of legal expertise with cutting-edge technology to deliver unparalleled legal guidance.
                 </p>
                 <p>
                   Founded by legal experts and technology visionaries, we understand that every legal matter deserves meticulous attention and expert insight. Our AI assistant doesn't replace human expertise—it enhances it, providing you with instant access to legal knowledge while maintaining the highest standards of accuracy and confidentiality.
                 </p>
                 <p>
-                  From contract analysis to legal research, from document drafting to strategic planning, AttorneyAI empowers individuals and businesses to navigate the legal landscape with confidence and precision.
+                  From contract analysis to legal research, from document drafting to strategic planning, Attorney-I empowers individuals and businesses to navigate the legal landscape with confidence and precision.
                 </p>
                 <div className="about-stats">
                   <div className="stat">

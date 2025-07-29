@@ -6,9 +6,9 @@ const Download = () => {
       <div className="container">
         <div className="download-content">
           <div className="download-text">
-            <h2>Get AttorneyAI Today</h2>
+            <h2>Get Attorney-I Today</h2>
             <p>
-              Join thousands of legal professionals and businesses who trust AttorneyAI for their legal needs. Download our app and experience the future of legal assistance.
+              Join thousands of legal professionals and businesses who trust Attorney-I for their legal needs. Download our app and experience the future of legal assistance.
             </p>
             <div className="download-features">
               <div className="download-feature">
