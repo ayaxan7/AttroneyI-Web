@@ -1,0 +1,110 @@
+.about {
+  position: relative;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.about-background {
+  background: linear-gradient(
+    rgba(17, 17, 17, 0.8),
+    rgba(17, 17, 17, 0.9)
+  ),
+  url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23111111" width="1200" height="600"/><g fill="none" stroke="%23D4AF37" stroke-width="1" opacity="0.1"><path d="M0,300 Q300,100 600,300 T1200,300"/><path d="M0,200 Q300,400 600,200 T1200,200"/><path d="M0,400 Q300,200 600,400 T1200,400"/></g><circle cx="200" cy="150" r="2" fill="%23D4AF37" opacity="0.3"/><circle cx="800" cy="450" r="2" fill="%23B08D57" opacity="0.3"/><circle cx="1000" cy="200" r="2" fill="%23D4AF37" opacity="0.3"/></svg>');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 600px;
+}
+
+.about-overlay {
+  background: linear-gradient(135deg, rgba(17, 17, 17, 0.9) 0%, rgba(26, 26, 26, 0.8) 100%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-text h2 {
+  font-size: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-bronze) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--color-text-muted);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-serif);
+}
+
+.stat p {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 4rem 0;
+  }
+  
+  .about-background {
+    background-attachment: scroll;
+    min-height: auto;
+  }
+  
+  .about-overlay {
+    min-height: auto;
+  }
+  
+  .about-text {
+    text-align: left;
+  }
+  
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .stat h3 {
+    font-size: 2rem;
+  }
+}

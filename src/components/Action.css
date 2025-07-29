@@ -1,0 +1,144 @@
+.action {
+  background: linear-gradient(180deg, var(--color-old-black) 0%, #1a1a1a 100%);
+  padding: 6rem 0;
+}
+
+.action-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.action-text h2 {
+  color: var(--color-gold);
+  margin-bottom: 1.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.action-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.action-features {
+  margin-bottom: 2.5rem;
+}
+
+.action-feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.feature-bullet {
+  color: var(--color-gold);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.demo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-placeholder {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  aspect-ratio: 16/9;
+  background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+  border: 2px solid var(--color-gold);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.2);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: var(--color-gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.play-button:hover {
+  background: var(--color-bronze);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.play-icon {
+  color: var(--color-old-black);
+  font-size: 2rem;
+  margin-left: 5px;
+}
+
+.video-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(17, 17, 17, 0.9));
+  padding: 2rem 1.5rem 1.5rem;
+  color: var(--color-text-light);
+}
+
+.video-overlay h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--color-gold);
+}
+
+.video-overlay p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .action {
+    padding: 4rem 0;
+  }
+  
+  .action-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .action-feature {
+    justify-content: center;
+  }
+  
+  .video-placeholder {
+    max-width: 100%;
+  }
+  
+  .play-button {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .play-icon {
+    font-size: 1.5rem;
+  }
+}
