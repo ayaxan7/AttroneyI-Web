@@ -1,5 +1,8 @@
 import './Footer.css';
-
+import linkedinLogo from '../assets/icons/linkedin-logo.png';
+import gmailLogo from '../assets/icons/gmail-logo.png';
+import websiteLogo from '../assets/icons/internet-logo.png';
+import instagramLogo from '../assets/icons/instagram-logo.png';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -11,13 +14,20 @@ const Footer = () => {
             <h3>Attorney-I</h3>
             <p>Your AI Legal Assistant. Reimagined.</p>
             <div className="social-links">
-              <a href="#" aria-label="LinkedIn">💼</a>
-              <a href="#" aria-label="Twitter">🐦</a>
-              <a href="#" aria-label="Facebook">📘</a>
-              <a href="#" aria-label="Email">📧</a>
+            <a href="https://www.linkedin.com/in/syed-mohammad-ayaan-30302b271/" aria-label="LinkedIn">
+                <img src={linkedinLogo} alt="LinkedIn" width="24" height="24" />
+            </a>
+            <a href="https://attorney-i.vercel.app" aria-label="Website">
+                <img src={websiteLogo} alt="Website" width="24" height="24" />
+            </a>
+            <a href="https://instagram.com" aria-label="Instagram">
+                <img src={instagramLogo} alt="Instagram" width="24" height="24" />
+            </a>
+            <a href="mailto:syedayaan9376@gmail.com" aria-label="Gmail">
+                <img src={gmailLogo} alt="Gmail" width="24" height="24" />
+            </a>
             </div>
-          </div>
-          
+          </div>   
           <div className="footer-links">
             <div className="footer-column">
               <h4>Product</h4>

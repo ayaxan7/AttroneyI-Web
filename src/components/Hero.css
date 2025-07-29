@@ -48,6 +48,8 @@
   transition: all 0.3s ease;
   border-radius: 8px;
   overflow: hidden;
+  width: 160px;
+  height: 48px;
 }
 
 .hero-store-btn:hover {
@@ -56,8 +58,9 @@
 }
 
 .hero-store-btn-img {
-  width: 160px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   display: block;
   transition: all 0.3s ease;
 }

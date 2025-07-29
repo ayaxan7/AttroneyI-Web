@@ -23,12 +23,11 @@ const Hero = () => {
                 className="hero-store-btn"
               >
                 <img 
-                  src="/src/assets/image.png" 
+                  src="/src/assets/icons/appstorebtn.png" 
                   alt="Download on the App Store" 
                   className="hero-store-btn-img"
                 />
               </a>
-              
               <a 
                 href="https://play.google.com/placeholder-play-store-link" 
                 target="_blank" 
@@ -36,7 +35,7 @@ const Hero = () => {
                 className="hero-store-btn"
               >
                 <img 
-                  src="/src/assets/playstorebutton.png" 
+                  src="/src/assets/icons/playstorebtn.png" 
                   alt="Get it on Google Play" 
                   className="hero-store-btn-img"
                 />

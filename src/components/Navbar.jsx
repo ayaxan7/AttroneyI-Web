@@ -25,12 +25,12 @@ const Navbar = () => {
             <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
           </ul>
           
-          <button 
+          {/* <button 
             className="btn btn-start"
             onClick={() => scrollToSection('hero')}
           >
             Start
-          </button>
+          </button> */}
         </div>
       </div>
     </nav>
