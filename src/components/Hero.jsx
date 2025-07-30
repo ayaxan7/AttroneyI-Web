@@ -5,6 +5,8 @@ import JurisChatScreen from '../assets/carouselscreens/JurisChatScreen.png';
 import CreateDrafts from '../assets/carouselscreens/Create Drafts.png';
 import Community from '../assets/carouselscreens/Community.png';
 import HelpAndSupport from '../assets/carouselscreens/Help & Support.png';
+import PlayStoreBtn from '../assets/icons/playstorebtn.png';
+import AppStoreBtn from '../assets/icons/appstorebtn.png';
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
@@ -117,7 +119,7 @@ const Hero = () => {
                 className="hero-store-btn"
               >
                 <img 
-                  src="/src/assets/icons/appstorebtn.png" 
+                  src={AppStoreBtn}
                   alt="Download on the App Store" 
                   className="hero-store-btn-img"
                 />
@@ -129,7 +131,7 @@ const Hero = () => {
                 className="hero-store-btn"
               >
                 <img 
-                  src="/src/assets/icons/playstorebtn.png" 
+                  src={PlayStoreBtn}
                   alt="Get it on Google Play" 
                   className="hero-store-btn-img"
                 />
