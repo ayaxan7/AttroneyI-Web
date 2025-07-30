@@ -51,9 +51,67 @@
   transform: translateY(-2px);
 }
 
+/* Footer Logo Styles */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-logo-img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Social Links in Footer Right */
+.social-links-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.social-link:hover {
+  color: var(--color-gold);
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.social-link:hover .social-icon {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-old-black);
+}
+
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
@@ -63,6 +121,7 @@
   margin-bottom: 1rem;
   font-weight: 600;
   font-family: var(--font-family);
+  text-align: center;
 }
 
 .footer-column ul {
@@ -86,6 +145,48 @@
 
 .footer-column a:hover {
   color: var(--color-gold);
+}
+
+/* About Lists Side by Side */
+.about-lists {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.about-lists ul {
+  flex: 1;
+}
+
+/* About Us Title Positioning */
+.footer-column:first-child h4 {
+  text-align: left;
+  padding-left: 6rem;
+}
+
+/* Contact Address Styling */
+.contact-address {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.contact-address p {
+  color: var(--color-text-muted);
+  font-family: var(--font-family);
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  word-wrap: break-word;
+}
+
+/* Contact Section Specific Styling */
+.contact-section .contact-address {
+  width: 100%;
+  max-width: 400px;
+}
+
+.contact-section .contact-address p {
+  font-size: 0.95rem;
 }
 
 .footer-bottom {
@@ -143,7 +244,24 @@
     text-align: left;
   }
   
-  .social-links {
+  .footer-logo {
     justify-content: center;
+  }
+  
+  .social-links-footer {
+    align-items: center;
+  }
+  
+  .social-link {
+    justify-content: center;
+  }
+  
+  .contact-section .contact-address {
+    max-width: 100%;
+  }
+  
+  .about-lists {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
