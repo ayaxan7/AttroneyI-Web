@@ -26,12 +26,12 @@ const Navbar = () => {
           </div>
           
           <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-            <li><a href="#hero" onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
-            <li><a href="#features" onClick={(e) => { e.preventDefault(); scrollToSection('features'); }}>Features</a></li>
-            <li><a href="#about" onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
+              <li><a href="#hero" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
+  <li><a href="#features" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('features'); }}>Features</a></li>
+  <li><a href="#about" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('about'); }}>About</a></li>
             {/* <li><a href="#action" onClick={(e) => { e.preventDefault(); scrollToSection('action'); }}>Demo</a></li>
             <li><a href="#testimonials" onClick={(e) => { e.preventDefault(); scrollToSection('testimonials'); }}>Testimonials</a></li> */}
-            <li><a href="#contact" onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
+  <li><a href="#contact" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}>Contact</a></li>
           </ul>
           
           <button 
