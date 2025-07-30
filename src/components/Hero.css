@@ -232,19 +232,19 @@
   z-index: 4;
 }
 
-.carousel-arrows {
+/* Desktop: Position arrows on the sides */
+.carousel-arrow-left {
   position: absolute;
+  left: -80px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 4;
-}
-
-.carousel-arrow-left {
-  left: -80px;
 }
 
 .carousel-arrow-right {
+  position: absolute;
   right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-arrow {
@@ -260,9 +260,6 @@
   transition: all 0.3s ease;
   color: var(--color-gold);
   backdrop-filter: blur(10px);
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 .carousel-arrow:hover {
@@ -284,14 +281,6 @@
 
 .carousel-arrow:hover svg {
   transform: scale(1.1);
-}
-
-.carousel-arrow-left {
-  left: -80px;
-}
-
-.carousel-arrow-right {
-  right: -80px;
 }
 
 .carousel-indicators {
@@ -360,20 +349,31 @@
   }
   
   .carousel-controls {
-    bottom: -30px;
+    bottom: -80px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
   }
   
   .carousel-arrow {
     width: 40px;
     height: 40px;
+    position: static;
+    transform: none;
   }
   
   .carousel-arrow-left {
-    left: -60px;
+    left: auto;
+    order: 1;
   }
 
   .carousel-arrow-right {
-    right: -60px;
+    right: auto;
+    order: 3;
+  }
+  
+  .carousel-indicators {
+    order: 2;
   }
   
   .carousel-arrow svg {
@@ -418,5 +418,23 @@
 
   .carousel-container.sliding-prev .carousel-right.transitioning {
     transform: translateY(-50%) translateX(25px) rotateY(-35deg) scale(0.65);
+  }
+}
+
+/* Extra small mobile devices */
+@media (max-width: 480px) {
+  .carousel-controls {
+    bottom: -70px;
+    gap: 1.5rem;
+  }
+  
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .carousel-arrow svg {
+    width: 10px;
+    height: 10px;
   }
 }
