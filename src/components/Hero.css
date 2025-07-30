@@ -265,7 +265,7 @@
 .carousel-arrow:hover {
   background: var(--color-gold);
   color: var(--color-old-black);
-  transform: translateY(-50%) scale(1.1);
+  /* transform: translateY(-50%) scale(1.1); */
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
 
@@ -279,9 +279,9 @@
   transition: transform 0.3s ease;
 }
 
-.carousel-arrow:hover svg {
+/* .carousel-arrow:hover svg {
   transform: scale(1.1);
-}
+} */
 
 .carousel-indicators {
   display: flex;
