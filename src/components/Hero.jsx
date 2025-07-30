@@ -164,18 +164,33 @@ const Hero = () => {
                   />
                 </div>
               </div>
+              
+              {/* Left Arrow */}
+              <button 
+                className="carousel-arrow carousel-arrow-left"
+                onClick={handlePrevClick}
+                disabled={isTransitioning}
+                aria-label="Previous image"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+              </button>
+              
+              {/* Right Arrow */}
+              <button 
+                className="carousel-arrow carousel-arrow-right"
+                onClick={handleNextClick}
+                disabled={isTransitioning}
+                aria-label="Next image"
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+              </button>
+              
+              {/* Center Indicators */}
               <div className="carousel-controls">
-                <button 
-                  className="carousel-arrow carousel-arrow-prev"
-                  onClick={handlePrevClick}
-                  disabled={isTransitioning}
-                  aria-label="Previous image"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <polyline points="15,18 9,12 15,6"></polyline>
-                  </svg>
-                </button>
-                
                 <div className="carousel-indicators">
                   {carouselImages.map((_, index) => (
                     <button
@@ -186,17 +201,6 @@ const Hero = () => {
                     />
                   ))}
                 </div>
-                
-                <button 
-                  className="carousel-arrow carousel-arrow-next"
-                  onClick={handleNextClick}
-                  disabled={isTransitioning}
-                  aria-label="Next image"
-                >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                    <polyline points="9,18 15,12 9,6"></polyline>
-                  </svg>
-                </button>
               </div>
             </div>
           </div>

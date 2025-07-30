@@ -80,7 +80,7 @@
   position: relative;
   width: 100%;
   max-width: 700px;
-  height: 600px;
+  height: 750px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -118,8 +118,8 @@
 
 /* Default positions - not transitioning */
 .carousel-left {
-  width: 180px;
-  height: 380px;
+  width: 200px;
+  height: 480px;
   left: 0;
   top: 50%;
   transform: translateY(-50%) translateX(-30px) rotateY(25deg) scale(0.85);
@@ -129,22 +129,21 @@
 }
 
 .carousel-center {
-  width: 280px;
-  height: 560px;
+  width: 320px;
+  height: 700px;
   left: 50%;
   top: 10%;
   transform: translateX(-50%) translateY(-25px) scale(1);
   z-index: 3;
   opacity: 1;
   box-shadow: 0 35px 70px rgba(0, 0, 0, 0.5), 
-              0 0 0 3px var(--color-gold),
               0 0 20px rgba(212, 175, 55, 0.3);
   filter: brightness(1);
 }
 
 .carousel-right {
-  width: 180px;
-  height: 380px;
+  width: 200px;
+  height: 480px;
   right: 0;
   top: 50%;
   transform: translateY(-50%) translateX(30px) rotateY(-25deg) scale(0.85);
@@ -229,16 +228,31 @@
   transform: translateX(-50%);
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: center;
   z-index: 4;
+}
+
+.carousel-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+}
+
+.carousel-arrow-left {
+  left: -80px;
+}
+
+.carousel-arrow-right {
+  right: -80px;
 }
 
 .carousel-arrow {
   background: rgba(17, 17, 17, 0.8);
   border: 2px solid var(--color-gold);
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,12 +260,15 @@
   transition: all 0.3s ease;
   color: var(--color-gold);
   backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-arrow:hover {
   background: var(--color-gold);
   color: var(--color-old-black);
-  transform: scale(1.1);
+  transform: translateY(-50%) scale(1.1);
   box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
 
@@ -267,6 +284,14 @@
 
 .carousel-arrow:hover svg {
   transform: scale(1.1);
+}
+
+.carousel-arrow-left {
+  left: -80px;
+}
+
+.carousel-arrow-right {
+  right: -80px;
 }
 
 .carousel-indicators {
@@ -309,18 +334,18 @@
   
   .image-carousel {
     max-width: 450px;
-    height: 420px;
+    height: 450px;
   }
   
   .carousel-left {
-    width: 120px;
-    height: 240px;
+    width: 140px;
+    height: 270px;
     transform: translateY(-50%) translateX(-15px) rotateY(25deg) scale(0.75);
   }
 
   .carousel-center {
-    width: 180px;
-    height: 360px;
+    width: 210px;
+    height: 390px;
     top: 5%;
     transform: translateX(-50%) translateY(-15px) scale(1);
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5), 
@@ -329,24 +354,31 @@
   }
 
   .carousel-right {
-    width: 120px;
-    height: 240px;
+    width: 140px;
+    height: 270px;
     transform: translateY(-50%) translateX(15px) rotateY(-25deg) scale(0.75);
   }
   
   .carousel-controls {
     bottom: -30px;
-    gap: 1rem;
   }
   
   .carousel-arrow {
-    width: 18px;
-    height: 18px;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-arrow-left {
+    left: -60px;
+  }
+
+  .carousel-arrow-right {
+    right: -60px;
   }
   
   .carousel-arrow svg {
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
   }
   
   .hero-text {
