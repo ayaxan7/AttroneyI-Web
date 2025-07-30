@@ -25,6 +25,10 @@ const Navbar = () => {
             <img src="/logo.png" alt="Attorney-I Logo" className="navbar-logo-img" />
           </div>
           
+          <div className="navbar-brand-text">
+            <h1>Attorney-I</h1>
+          </div>
+          
           <ul className={`navbar-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
               <li><a href="#hero" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('hero'); }}>Home</a></li>
   <li><a href="#features" style={{ fontWeight: 'bold' }} onClick={(e) => { e.preventDefault(); scrollToSection('features'); }}>Features</a></li>

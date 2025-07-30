@@ -222,6 +222,11 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
+  
+  .footer-column:first-child h4 {
+    text-align: center;
+    padding-left: 0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -241,7 +246,16 @@
   }
   
   .footer-column {
-    text-align: left;
+    text-align: center;
+  }
+  
+  .footer-column h4 {
+    text-align: center;
+  }
+  
+  .footer-column:first-child h4 {
+    text-align: center;
+    padding-left: 0;
   }
   
   .footer-logo {
@@ -249,6 +263,7 @@
   }
   
   .social-links-footer {
+    justify-content: center;
     align-items: center;
   }
   
@@ -258,10 +273,84 @@
   
   .contact-section .contact-address {
     max-width: 100%;
+    margin: 0 auto 1.5rem;
   }
   
   .about-lists {
     flex-direction: column;
     gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .about-lists ul {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .contact-section ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0 1rem;
+  }
+  
+  .footer-content {
+    gap: 1.5rem;
+  }
+  
+  .footer-links {
+    gap: 1rem;
+  }
+  
+  .footer-column {
+    padding: 0 1rem;
+  }
+  
+  .footer-logo-img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .footer-brand h3 {
+    font-size: 1.5rem;
+  }
+  
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .social-links-footer {
+    gap: 0.8rem;
+  }
+  
+  .footer-column h4 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-column a {
+    font-size: 0.85rem;
+  }
+  
+  .contact-address p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+  
+  .footer-bottom {
+    padding-top: 1.5rem;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.8rem;
+  }
+  
+  .disclaimer {
+    font-size: 0.7rem !important;
+    padding: 0 1rem;
   }
 }
