@@ -4,6 +4,9 @@ import gmailLogo from '../assets/icons/gmail-logo.png';
 import websiteLogo from '../assets/icons/internet-logo.png';
 import instagramLogo from '../assets/icons/instagram-logo.png';
 import productLogo from '/logo.png';
+import logo from '../assets/logo.png';
+import logoDark from '../assets/logo-black.png';
+import logoremovebg from '../assets/logo-removebg.png';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -14,20 +17,23 @@ const Footer = () => {
           <div className="footer-brand">
             <div className="footer-logo">
               <img src={productLogo} alt="Attorney-I Logo" className="footer-logo-img" />
+              {/* <img src={logo} alt="Attorney-I Logo" className="footer-logo-img" />
+              <img src={logoDark} alt="Attorney-I Logo" className="footer-logo-img" />
+              <img src={logoremovebg} alt="Attorney-I Logo" className="footer-logo-img" /> */}
               <h3>Attorney-I</h3>
             </div>
             <p>Your AI Legal Assistant. Reimagined.</p>
             <div className="social-links-footer">
-              <a href="https://www.linkedin.com/in/syed-mohammad-ayaan-30302b271/" className="social-link">
+              {/* <a href="https://www.linkedin.com/in/syed-mohammad-ayaan-30302b271/" className="social-link">
                 <img src={linkedinLogo} alt="LinkedIn" className="social-icon" />
-              </a>
+              </a> */}
               <a href="https://attorney-i.vercel.app" className="social-link">
                 <img src={websiteLogo} alt="Website" className="social-icon" />
               </a>
-              <a href="https://instagram.com" className="social-link">
+              {/* <a href="https://instagram.com" className="social-link">
                 <img src={instagramLogo} alt="Instagram" className="social-icon" />
-              </a>
-              <a href="mailto:syedayaan9376@gmail.com" className="social-link">
+              </a> */}
+              <a href="mailto:jaanvipande02@gmail.com" className="social-link">
                 <img src={gmailLogo} alt="Gmail" className="social-icon" />
               </a>
             </div>
@@ -69,12 +75,12 @@ const Footer = () => {
             
             <div className="footer-column contact-section">
               <h4>Contact</h4>
-              <div className="contact-address">
+              {/* <div className="contact-address">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit quo id qui adipisci hic, eaque officiis! Dicta, ut obcaecati?</p>
-              </div>
+              </div> */}
               <ul>
-                <li><a href="mailto:support@attorney-i.com">support@attorney-i.com</a></li>
-                <li><a href="tel:+1-555-0123">+1 (555) 012-3456</a></li>
+                <li><a href="mailto:jaanvipande02@gmail.com">jaanvipande02@gmail.com</a></li>
+                <li><a href="tel:+919311524600"> +91 9311524600</a></li>
               </ul>
             </div>
           </div>

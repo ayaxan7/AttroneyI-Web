@@ -1,6 +1,8 @@
 import './Navbar.css';
 import { useState } from 'react';
-
+import logo from '../assets/logo.png';
+import logoDark from '../assets/logo-black.png';
+import logoremovebg from '../assets/logo-removebg.png';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -23,6 +25,9 @@ const Navbar = () => {
         <div className="navbar-content">
           <div className="navbar-logo">
             <img src="/logo.png" alt="Attorney-I Logo" className="navbar-logo-img" />
+            {/* <img src={logo} alt="Attorney-I Logo" className="navbar-logo-img" /> */}
+            {/* <img src={logoDark} alt="Attorney-I Logo" className="navbar-logo-img" /> */}
+            {/* <img src={logoremovebg} alt="Attorney-I Logo" className="navbar-logo-img" /> */}
           </div>
           
           <div className="navbar-brand-text">

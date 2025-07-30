@@ -31,7 +31,7 @@ Best regards,
 ${formData.name}`;
 
   // Create Gmail URL with correct parameter order
-  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=syedayaan9376@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=jaanvipande02@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   
   // Open Gmail in a new window
   window.open(gmailUrl, '_blank');
