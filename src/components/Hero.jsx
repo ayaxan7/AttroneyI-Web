@@ -12,7 +12,6 @@ const Hero = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [slideDirection, setSlideDirection] = useState('next');
   
-  // Sample images - you can replace these with your actual image paths
    const carouselImages = [
     Dashboard,
     JurisChatScreen,
@@ -31,7 +30,7 @@ const Hero = () => {
         setCurrentImageIndex((prevIndex) => 
           (prevIndex + 1) % carouselImages.length
         );
-      }, 600); // Changed from 2000 to 600ms - halfway point
+      }, 600);
       
       // End transition after animation completes
       setTimeout(() => {
