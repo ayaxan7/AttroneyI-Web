@@ -251,7 +251,6 @@ yarn preview
 ### Build Process
 1. **Install Dependencies**: `npm install`
 2. **Run Build**: `npm run build`
-3. **Deploy**: Upload `dist/` folder to hosting platform
 
 ### Recommended Platforms
 - **Vercel** (Current deployment)
