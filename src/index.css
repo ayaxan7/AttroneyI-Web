@@ -17,6 +17,8 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
+  width: 100%;
 }
 
 body {
@@ -26,6 +28,21 @@ body {
   color: var(--color-text-light);
   background: linear-gradient(135deg, var(--color-old-black) 0%, #1a1a1a 100%);
   min-height: 100vh;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent horizontal scrolling on all elements */
+* {
+  max-width: 100%;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Typography */
@@ -115,11 +132,14 @@ a:hover {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  width: 100%;
 }
 
 /* Section spacing */
 section {
   padding: 5rem 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Responsive */
@@ -129,6 +149,9 @@ section {
   }
   
   .container {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
   }
 }
