@@ -246,7 +246,7 @@ npm run preview
 yarn preview
 ```
 
-## 🌐 Deployment
+## Deployment
 
 ### Build Process
 1. **Install Dependencies**: `npm install`
@@ -262,7 +262,7 @@ yarn preview
 ### Environment Variables
 No environment variables required for current implementation.
 
-## 📖 Component Documentation
+## Component Documentation
 
 ### Core Components
 
@@ -320,10 +320,6 @@ Please include:
 ### Project Information
 - **Website**: [attorney-i.vercel.app](https://attorney-i.vercel.app)
 - **Repository**: [github.com/ayaxan7/AttroneyI-Web](https://github.com/ayaxan7/AttroneyI-Web)
-
-### Development Team
-- **Email**: jaanvipande02@gmail.com
-- **Phone**: +91 9311524600
 
 ### Support
 For technical support or business inquiries, please contact us through the website contact form or email directly.
